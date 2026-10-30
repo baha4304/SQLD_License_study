@@ -131,8 +131,22 @@ REGEXP_SUBSTR
 REGEXP_INSTR
 REGEXP_COUNT
 
+2-3-1 DML
+ROLLBACK 가능
+DELETE에 WHERE 없으면 전체가 삭제된다.
 
+2-3-2 TCL
+SAVEPOINT 후 ROLLBACK하면 포인트 이후 작업만 취소
+DDL 실행시 자동 커밋
 
+2-3-3 DDL
+TRUNCATE는 WHERE불가능하다.
+FK는 부모의 일반컬럼 참조 불가능
+
+2-3-4 DCL
+시스템권한 : WITH ADMIN OPTION
+객체 권한 : WITH GRANT OPTION
+GRANT는 자동 커밋됨
 
 
 
