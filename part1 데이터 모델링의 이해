@@ -48,7 +48,6 @@ NULL과 논리 -> UNKNOWN
 NULL함수 : NVL, NVL2, NULLIF, COALESCE
 NVL(a,b) : a가 null이면 b아니면 a
 NVL2(a,b,c) : a가 null이면 c 아니면 b
-NOT NULLIF() : 안에 null이 있으면 unknown으로 조회 안됨 공집합
 
 1-2-5 본질식별자vs인조식별자
 본질식별자 : 업무에 의미가 있는 자연키
